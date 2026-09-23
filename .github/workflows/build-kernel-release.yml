@@ -8,12 +8,6 @@ on:
   workflow_dispatch:
         
 jobs:
-- name: Checkout
-        uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
-
   build-kernel-gs201:
     uses: ./.github/workflows/sultan.yml
     secrets: inherit
